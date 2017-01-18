@@ -1,0 +1,14 @@
+Algorithm for Problem Statement : 
+
+1.Start
+    2. Loops through the global list of queries :
+        assigns a dictionary and visited array (to avoid repetitive checking)
+        3. Loops through each word in query and checks if the word is present or not in global word list
+            if not present in global list, word not present in any page. Continues to next word in query.
+            if present:
+                4. loops through each page's word list that the word contains , accessed from global word dict( value)
+                and sends page and query to check SOP.
+                5. assigns returned result to the dictionary, which is sorted in the following order :
+                sorted in descending order of value(SOP). If values matched then sorted in ascending order of keys(page names).
+                6. sends to print function 
+7.End.
